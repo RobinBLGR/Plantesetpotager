@@ -1,0 +1,13 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  list-style-type: none;
+  gap: 50px;
+  align-items: center;
+}
+
+/*# sourceMappingURL=header.css.map */

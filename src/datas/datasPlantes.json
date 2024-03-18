@@ -1,0 +1,38 @@
+{
+    "plantes": [
+      {
+        "id": 1,
+        "nom": "Tomate",
+        "image": "",
+        "description": "Fruit juteux et coloré, très polyvalent en cuisine.",
+        "periode_semis": "Février à avril",
+        "periode_recolte": "Juillet à septembre",
+        "besoin_eau": "Élevé",
+        "exposition": "Ensoleillée",
+        "distance_plants": 40
+      },
+      {
+        "id": 2,
+        "nom": "Pomme de terre",
+        "image": "",
+        "description": "Tubercule polyvalent, largement utilisé en cuisine.",
+        "periode_semis": "Mars à mai",
+        "periode_recolte": "Juin à septembre",
+        "besoin_eau": "Moyen",
+        "exposition": "Ensoleillée",
+        "distance_plants": 30
+      },
+      {
+        "id": 3,
+        "nom": "Carotte",
+        "image": "",
+        "description": "Légume racine sucré et croquant, riche en vitamines.",
+        "periode_semis": "Mars à juin",
+        "periode_recolte": "Juin à octobre",
+        "besoin_eau": "Faible à moyen",
+        "exposition": "Ensoleillée à mi-ombragée",
+        "distance_plants": 5
+      },
+    ]
+  }
+  
