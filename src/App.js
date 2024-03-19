@@ -6,21 +6,21 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
 import NotFound from './components/NotFound';
+import FichePlante from './components/FichePlante';
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
-   
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/fiche/:nom" element={<FichePlante />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-
       <Footer />
     </BrowserRouter>
   );
 }
-// FicheLogement le lien ne fonctionne pas, doit permettre depuis fiche d'aller sur page accueil
+
 export default App;
