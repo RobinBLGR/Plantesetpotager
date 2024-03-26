@@ -1,6 +1,12 @@
 header {
     display: flex;
     justify-content: space-between;
+    border-right: 5px solid #DBC09F;
+
+    img {
+        width: 150px;
+        height: 150px;
+    }
 }
 
 nav {
@@ -8,4 +14,12 @@ nav {
     list-style-type:none;
     gap: 50px;
     align-items: center;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding: 15px;
+    margin-right: 20px;
 }

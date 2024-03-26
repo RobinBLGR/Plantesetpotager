@@ -1,8 +1,33 @@
+.message__accueil {
+  margin: 20px;
+}
+.message__accueil p {
+  margin: 0;
+}
+
+h2 {
+  background-color: #DBC09F;
+  margin: 0;
+  padding: 20px;
+  border-radius: 0 0 25px 25px;
+}
+
+.title__cards {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid tomato;
+  border-radius: 25px;
+  height: 300px;
+}
+.title__cards h3 {
+  padding-left: 20px;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 50px;
+  align-items: center;
   gap: 30px;
 }
 

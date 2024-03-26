@@ -10,8 +10,8 @@ function Card() {
         <div key={plante.id} className="card">
           <Link to={`/fiche/${plante.nom}`}>
             <img src={plante.image} alt={plante.nom} />
+            <h4>{plante.nom}</h4>
           </Link>
-          <h3>{plante.nom}</h3>
         </div>
       ))}
     </>

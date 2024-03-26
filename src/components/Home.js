@@ -5,12 +5,18 @@ import Card from './Card';
 
 function Home() {
   return (
-    <div>
+    <div className='accueil'>
       <h2>Accueil</h2>
-      <p>Bienvenue sur la page d'accueil.</p>
-      <div className="cards">
-        <Card />
+      <div className='message__accueil'>
+      <p>Retrouvez toutes les infos à savoir et les astuces à connaître pour réussir votre potager grâce à nos fiches détaillées.</p>
+      <p>Et découvrez également pour chaque légume de quoi les savourer avec nos idées recettes !</p>
       </div>
+      <div className="title__cards">
+          <h3>Fiches au hasard</h3>
+          <div className="cards">
+            <Card />
+          </div>
+        </div>
     </div>
   );
 }
