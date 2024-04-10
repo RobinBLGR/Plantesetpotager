@@ -1,7 +1,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
-const Legume = require('./models/legume');
+const Legume = require('./models/Legume');
+const path = require('path');
+
+const legumesRoutes = require('./routes/legumes');
+const userRoutes = require('./routes/user');
 
 mongoose.connect('mongodb+srv://testvieuxgrimoire:mdptest@vieuxgrimoire.wcghary.mongodb.net/?retryWrites=true&w=majority&appName=VieuxGrimoire',
   { useNewUrlParser: true,
@@ -10,6 +14,10 @@ mongoose.connect('mongodb+srv://testvieuxgrimoire:mdptest@vieuxgrimoire.wcghary.
   .catch(() => console.log('Connexion à MongoDB échouée !'));
 
 app.use(express.json());
+
+app.use('/images', express.static(path.join(__dirname, 'images')));
+app.use('/api/legumes', legumesRoutes);
+app.use('/api/auth', userRoutes);
 
 // Permet aux requêtes backend et frontend de communiquer entre elles :
 app.use((req, res, next) => {
