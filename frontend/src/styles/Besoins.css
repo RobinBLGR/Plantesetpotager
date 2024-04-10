@@ -1,0 +1,93 @@
+.besoins {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .besoins {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.besoin__eau,
+.exposition,
+.periode-semis {
+  margin: 0 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 150px;
+  border: 1px solid black;
+  box-shadow: 3px 3px 5px black;
+}
+@media (max-width: 768px) {
+  .besoin__eau,
+  .exposition,
+  .periode-semis {
+    height: 30px;
+    font-size: 12px;
+    width: 140px;
+  }
+}
+
+@media (max-width: 768px) {
+  .en__bref .petit__bref {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.besoin__titre,
+.exposition__titre,
+.periode-semis__titre {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 16px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .besoin__titre,
+  .exposition__titre,
+  .periode-semis__titre {
+    font-size: 14px;
+    padding-bottom: 5px;
+  }
+}
+
+.besoin__icones,
+.exposition__icones,
+.periode-semis__icones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue-drop {
+  color: blue;
+  margin-right: 5px;
+}
+
+.gray-drop {
+  color: gray;
+  margin-right: 5px;
+}
+
+.gray-sun {
+  color: gray;
+  margin-right: 5px;
+}
+
+.yellow-sun {
+  color: yellow;
+  margin-right: 5px;
+}
+
+/*# sourceMappingURL=Besoins.css.map */

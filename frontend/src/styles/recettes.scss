@@ -1,0 +1,120 @@
+h2 {
+    background-color: #DBC09F;
+    margin: 0;
+    padding: 20px;
+    border-radius: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+        font-size: 18px;
+        padding: 10px;
+        margin: 0;
+        }
+}
+
+.recettes {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    padding: 20px;
+    margin-bottom: 40px;
+    
+    p {
+      margin-bottom: 20px;
+    }
+  }
+  
+  .livre__recette {
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    width: 70%;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+  
+    p {
+      background-color: white;
+    }
+  
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 50%;
+      background-color: lightbrown;
+      transform-origin: top;
+    }
+  
+    &::before {
+      left: 0;
+      transform: rotateY(10deg);
+      box-shadow: 0 0 10px brown;
+      z-index: -1;
+    }
+  
+    &::after {
+      right: 0;
+      transform: rotateY(-10deg);
+      box-shadow: 0 0 10px brown;
+      z-index: -1;
+    }
+  
+    .legende__recette {
+      width: 50%;
+      border-right: 2px solid black;
+  
+      h3 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 28px;
+        text-align: center;
+        padding-right: 20px;
+      }
+
+      p {
+        padding: 0;
+      }
+  
+      img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        padding: 15px;
+        border-radius: 60px;
+      }
+  
+      .image__titre {
+        display: flex;
+      }
+
+      p {
+        padding-left: 40px;
+        background-color: transparent;
+      }
+
+      ul {
+        padding-left: 70px;
+        margin-bottom: 40px;
+      }
+    }
+
+    .nom__description {
+        padding-right: 10px;
+        margin-bottom: 15px;
+    }
+  
+    .etapes__recette {
+      width: 50%;
+      font-family: 'Dancing Script', cursive;
+      font-size: 20px;
+  
+      .etape {
+        margin-bottom: 20px;
+      }
+    }
+  }

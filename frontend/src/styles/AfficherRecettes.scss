@@ -1,0 +1,39 @@
+.liste__recettes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;   
+  }
+  
+  .recette__item {
+    width: 30%;
+    border: 2px solid tomato;
+    border-radius: 25px;
+    padding: 10px;
+  }
+  
+  .recette__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .recette__content h4 {
+    margin: 10px;
+  }
+  
+  .recette__content h4 a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: red;
+  }
+  
+  .recette__content img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+
+    @media (max-width: 768px) {
+    display: none;
+    }
+  }

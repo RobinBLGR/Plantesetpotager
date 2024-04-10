@@ -1,0 +1,87 @@
+{
+    "plantes": [
+      {
+        "id": 1,
+        "nom": "La tomate",
+        "image_home": "https://i.goopics.net/u9p79n.png",
+        "image_fiche": "https://i.goopics.net/fpgviu.png",
+        "description": "Fruit juteux et coloré, très polyvalent en cuisine.",
+        "lien_fiche": "fiche-tomate.html",
+        "periode_semis": "Février à avril",
+        "periode_recolte": "Juillet à septembre",
+        "besoin_eau": "Élevé",
+        "exposition": "Ensoleillée",
+        "distance_plants": 40
+      },
+      {
+        "id": 2,
+        "nom": "La pomme de terre",
+        "image_home": "https://i.goopics.net/mkb23h.png",
+        "image_fiche": "https://i.goopics.net/pu9gvy.png",
+        "description": "Tubercule polyvalent, largement utilisé en cuisine.",
+        "lien_fiche": "fiche-pomme-de-terre.html",
+        "periode_semis": "Mars à mai",
+        "periode_recolte": "Juin à septembre",
+        "besoin_eau": "Moyen",
+        "exposition": "Ensoleillée",
+        "distance_plants": 30
+      },
+      {
+        "id": 3,
+        "nom": "La carotte",
+        "image_home": "https://i.goopics.net/5br78r.png",
+        "image_fiche": "https://i.goopics.net/jjwqq8.png",
+        "legume_description": "Fruit racine comestible, la carotte est le compagon idéal de votre potager. Elle est largement utilisée en cuisine pour préparer une variété de plats, tels que des soupes, des purées, des salades et même des desserts grâce à sa saveur légèrement sucrée.",
+        "type_description": "La carotte est une plante herbacée bisannuelle appartenant à la famille des Apiaceae. Elle est cultivée comme une plante annuelle, ce qui signifie qu'elle complète son cycle de vie en une seule saison de croissance. Les feuilles de la carotte sont pennées et divisées en folioles fines, tandis que la racine est charnue et conique.",
+        "culture_description": "La carotte pousse généralement dans un sol bien drainé, meuble et riche en matière organique. Pour obtenir de belles carottes, il est recommandé de préparer le sol en le décompactant et en l'enrichissant avec du compost avant la plantation. Arrosez régulièrement pour maintenir le sol humide, mais évitez les excès d'eau pour éviter la pourriture des racines. Les mauvaises herbes doivent être éliminées régulièrement pour éviter la concurrence avec les carottes en croissance.",
+        "distance_description": "Pour permettre un développement adéquat des carottes, il est conseillé de laisser un espacement d'environ 10 à 15 centimètres entre les plants. Cela permet aux racines de se développer sans entraves et favorise une bonne circulation de l'air. Un espacement plus étroit peut entraîner des carottes de petite taille ou des racines déformées.",
+        "lien_fiche": "fiche-carotte.html",
+        "periode_semis": "Mars à juin",
+        "periode_recolte": "Juin à octobre",
+        "besoin_eau": "Moyen",
+        "exposition": "Mi-ombragée",
+        "distance_plants": 5
+      },
+      {
+        "id": 4,
+        "nom": "L'aubergine",
+        "image_home": "https://i.goopics.net/18k8xz.png",
+        "image_fiche": "https://i.goopics.net/q1pkcx.png",
+        "description": "Légume fruit, utilisé dans de nombreuses cuisines du monde.",
+        "lien_fiche": "fiche-aubergine.html",
+        "periode_semis": "Février à mai",
+        "periode_recolte": "Juillet à octobre",
+        "besoin_eau": "Élevé",
+        "exposition": "Ensoleillée",
+        "distance_entre_plants_cm": 60
+      },
+      {
+        "id": 5,
+        "nom": "La courgette",
+        "image_home": "https://i.goopics.net/qrsyab.png",
+        "image_fiche": "https://i.goopics.net/xq5f6j.png",
+        "description": "Légume tendre et savoureux, parfait pour les plats d'été.",
+        "lien_fiche": "fiche-courgette.html",
+        "periode_semis": "Avril à juin",
+        "periode_recolte": "Juin à octobre",
+        "besoin_eau": "Élevé",
+        "exposition": "Ensoleillée",
+        "distance_entre_plants_cm": 100
+      },
+      {
+        "id": 6,
+        "nom": "Le piment",
+        "image_home": "https://i.goopics.net/bjibjw.png",
+        "image_fiche": "https://i.goopics.net/si3dq2.jpg",
+        "description": "Le piment est un condiment populaire utilisé pour ajouter de la chaleur et de la saveur aux plats. Il est apprécié dans de nombreuses cuisines du monde entier.",
+        "lien_fiche": "fiche-piment.html",
+        "periode_semis": "Février à mai",
+        "periode_recolte": "Juillet à octobre",
+        "besoin_eau": "Moyen",
+        "exposition": "Ensoleillée",
+        "distance_entre_plants_cm": 40
+        }
+
+    ]
+  }
+  

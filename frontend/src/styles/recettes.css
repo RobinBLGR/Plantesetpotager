@@ -1,0 +1,107 @@
+h2 {
+  background-color: #DBC09F;
+  margin: 0;
+  padding: 20px;
+  border-radius: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 18px;
+    padding: 10px;
+    margin: 0;
+  }
+}
+
+.recettes {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+.recettes p {
+  margin-bottom: 20px;
+}
+
+.livre__recette {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 15px;
+  width: 70%;
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.livre__recette p {
+  background-color: white;
+}
+.livre__recette::before, .livre__recette::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: lightbrown;
+  transform-origin: top;
+}
+.livre__recette::before {
+  left: 0;
+  transform: rotateY(10deg);
+  box-shadow: 0 0 10px brown;
+  z-index: -1;
+}
+.livre__recette::after {
+  right: 0;
+  transform: rotateY(-10deg);
+  box-shadow: 0 0 10px brown;
+  z-index: -1;
+}
+.livre__recette .legende__recette {
+  width: 50%;
+  border-right: 2px solid black;
+}
+.livre__recette .legende__recette h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 28px;
+  text-align: center;
+  padding-right: 20px;
+}
+.livre__recette .legende__recette p {
+  padding: 0;
+}
+.livre__recette .legende__recette img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  padding: 15px;
+  border-radius: 60px;
+}
+.livre__recette .legende__recette .image__titre {
+  display: flex;
+}
+.livre__recette .legende__recette p {
+  padding-left: 40px;
+  background-color: transparent;
+}
+.livre__recette .legende__recette ul {
+  padding-left: 70px;
+  margin-bottom: 40px;
+}
+.livre__recette .nom__description {
+  padding-right: 10px;
+  margin-bottom: 15px;
+}
+.livre__recette .etapes__recette {
+  width: 50%;
+  font-family: "Dancing Script", cursive;
+  font-size: 20px;
+}
+.livre__recette .etapes__recette .etape {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=recettes.css.map */
