@@ -2,24 +2,32 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useParams, Link } from 'react-router-dom';
 import Besoins from './Besoins';
-import datasPlantes from '../datas/datasPlantes.json';
+import datasPlantes1 from '../datas/datasPlantes1.json';
+import datasPlantes2 from '../datas/datasPlantes2.json';
+import datasPlantes3 from '../datas/datasPlantes3.json';
 import '../styles/fichePlante.css';
 import EnBref from '../assets/enbref.png';
-import Decouvrez from '../assets/fiche/decouvrez-recettes.png'
+import Decouvrez from '../assets/fiche/logo-recette.webp';
 
 function FichePlante() {
   const { nom } = useParams();
-  const plantes = datasPlantes.plantes;
+
+  // Fusionner les données de tous les fichiers JSON en une seule liste de légumes
+  const plantes = [
+    ...datasPlantes1.plantes,
+    ...datasPlantes2.plantes,
+    ...datasPlantes3.plantes,
+  ];
+
   const indexPlanteActuelle = plantes.findIndex((plante) => plante.nom === nom);
 
   const indexPlanteSuivante = (indexPlanteActuelle + 1) % plantes.length;
-  const indexPlantePrecedente =
-    (indexPlanteActuelle - 1 + plantes.length) % plantes.length;
+  const indexPlantePrecedente = (indexPlanteActuelle - 1 + plantes.length) % plantes.length;
 
   const planteSuivante = plantes[indexPlanteSuivante];
   const plantePrecedente = plantes[indexPlantePrecedente];
 
-  const plante = datasPlantes.plantes.find((p) => p.nom === nom);
+  const plante = plantes.find((p) => p.nom === nom);
 
   return (
     <div>
@@ -32,7 +40,7 @@ function FichePlante() {
         <div className="fiche__detaillee">
           <div className='legume__decouvrez'>
             <img src={plante.image_fiche} alt={plante.nom} />
-          <Link to={`/recettes/${plante.nom}`}><img src={Decouvrez} /></Link>
+            <Link to={`/recettes/${plante.nom}`}><img src={Decouvrez} /></Link>
           </div>
           <div className="bref__description">
             <div className="en__bref">
@@ -40,8 +48,8 @@ function FichePlante() {
               <div className="petit__bref">
                 <Besoins besoinEau={plante.besoin_eau} exposition={plante.exposition} />
                 <div className="periode-semis">
-                <h3 className="periode-semis__titre">Période de semis :</h3>
-                 {plante.periode_semis}
+                  <h3 className="periode-semis__titre">Période de semis :</h3>
+                  {plante.periode_semis}
                 </div>
                 <div className="periode-semis">
                   <h3 className="periode-semis__titre">Période de récolte :</h3>
@@ -66,7 +74,7 @@ function FichePlante() {
         <Link to={`/fiche/${plantePrecedente.nom}`}>
           <img src={plantePrecedente.image_home} alt={plantePrecedente.nom} />
         </Link>
-        <span>Nos autres fiches</span>
+        <span>◄ Nos autres fiches ►</span>
         <Link to={`/fiche/${planteSuivante.nom}`}>
           <img src={planteSuivante.image_home} alt={planteSuivante.nom} />
         </Link>
@@ -74,7 +82,5 @@ function FichePlante() {
     </div>
   );
 }
-
-// rajouter distance plants, type de plante (annuelle, bisannuelle, vivave), conseil de culture et recettes/particularité culinaire
 
 export default FichePlante;

@@ -1,0 +1,53 @@
+{
+    "plantes": [
+      {
+        "id": 7,
+        "nom": "Le poivron",
+        "image_home": "https://i.goopics.net/9tubbf.png",
+        "image_fiche": "https://i.goopics.net/y7ebfe.jpg",
+        "legume_description": "Le poivron est un légume fruit originaire d'Amérique du Sud, largement cultivé pour sa saveur douce et sa palette de couleurs vibrantes. Il est utilisé dans de nombreuses cuisines du monde entier, que ce soit cru, cuit, grillé ou farci.",
+        "type_description": "Le poivron appartient à la famille des Solanacées et est classé comme une plante annuelle. Il produit des fruits de formes et de couleurs variées, allant du vert au rouge, en passant par le jaune, l'orange et le violet. Les poivrons peuvent être doux ou piquants, selon la variété.",
+        "culture_description": "Les poivrons préfèrent un sol bien drainé, riche en matière organique et légèrement acide (pH autour de 6,0 à 6,8). Ils nécessitent une exposition ensoleillée et un climat chaud pour une croissance optimale. Les plants de poivron peuvent être cultivés en pleine terre ou en pots, avec un espacement approprié pour permettre le développement des fruits.",
+        "distance_description": "Pour favoriser la circulation de l'air et éviter la concurrence entre les plants, il est recommandé de les espacer d'environ 40 à 50 centimètres dans les rangs, avec un espacement de 50 à 60 centimètres entre les rangs. Cela permet aux plants de poivron de se développer pleinement et de produire des fruits sains et savoureux.",        "lien_fiche": "fiche-poivron.html",
+        "periode_semis": "Février à mai",
+        "periode_recolte": "Juillet à octobre",
+        "besoin_eau": "Moyen",
+        "exposition": "Ensoleillée",
+        "distance_entre_plants_cm": 40
+      },
+{
+    "id": 11,
+    "nom": "Le cornichon",
+    "image_home": "https://i.goopics.net/5evth5.png",
+    "image_fiche": "https://i.goopics.net/75rifq.jpg",
+    "legume_description": "Le cornichon est un légume fruit utilisé principalement pour la préparation de conserves et de condiments tels que les pickles. Il est apprécié pour sa saveur acidulée et son croquant caractéristique.",
+    "type_description": "Le cornichon appartient à la famille des Cucurbitacées et est classé comme une plante annuelle. Il produit des fruits de petite taille, généralement de forme ovale à cylindrique, avec une peau vert foncé et des épines caractéristiques.",
+    "culture_description": "Les cornichons poussent bien dans un sol bien drainé, riche en matière organique et légèrement acide à neutre (pH autour de 6,0 à 7,0). Ils nécessitent une exposition ensoleillée et un climat chaud pour une croissance optimale. Les plants de cornichon doivent être espacés pour permettre le développement des fruits.",
+    "distance_description": "Pour favoriser la croissance des cornichons, les plants doivent être espacés d'environ 30 à 40 centimètres dans les rangs, avec un espacement de 100 à 120 centimètres entre les rangs. Cela permet aux plantes de se développer pleinement et de produire des fruits de bonne qualité.",
+    "lien_fiche": "fiche-cornichon.html",
+    "periode_semis": "Avril à juin",
+    "periode_recolte": "Juillet à octobre",
+    "besoin_eau": "Élevé",
+    "exposition": "Ensoleillée",
+    "distance_entre_plants_cm": 35
+    },
+    {
+        "id": 12,
+        "nom": "Le radis",
+        "image_home": "https://i.goopics.net/rsojhw.png",
+        "image_fiche": "https://i.goopics.net/tes5r7.jpg",
+        "legume_description": "Le radis est un légume racine apprécié pour sa saveur piquante et sa texture croquante. Il est largement utilisé dans les salades et comme garniture dans de nombreux plats.",
+        "type_description": "Le radis appartient à la famille des Brassicacées et est classé comme une plante annuelle. Il produit des racines de forme ronde ou allongée, généralement de couleur rouge, rose, blanche ou violette.",
+        "culture_description": "Les radis poussent bien dans un sol bien drainé, riche en matière organique et légèrement acide à neutre (pH autour de 6,0 à 7,0). Ils nécessitent une exposition ensoleillée à mi-ombre et peuvent être cultivés dans des climats tempérés.",
+        "distance_description": "Pour favoriser la croissance des radis, les graines doivent être semées à une profondeur d'environ 1 à 2 centimètres et espacées de 2 à 5 centimètres les unes des autres. Un espacement de 15 à 20 centimètres entre les rangs est recommandé pour permettre une croissance optimale.",
+        "lien_fiche": "fiche-radis.html",
+        "periode_semis": "Mars à septembre",
+        "periode_recolte": "Avril à novembre",
+        "besoin_eau": "Modéré",
+        "exposition": "Ensoleillée à mi-ombre",
+        "distance_entre_plants_cm": 3
+      }
+      
+    ]
+  }
+  

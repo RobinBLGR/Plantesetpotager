@@ -1,0 +1,20 @@
+{
+    "plantes": [
+      {
+        "id": 8,
+        "nom": "La laitue",
+        "image_home": "https://i.goopics.net/jghxmi.png",
+        "image_fiche": "https://i.goopics.net/tu5dda.jpg",
+        "legume_description": "La laitue est une plante potagère largement cultivée pour ses feuilles comestibles et sa saveur douce. Elle est couramment utilisée dans les salades, les sandwichs et les wraps. La laitue est appréciée pour sa texture croquante et son apport en nutriments, notamment en vitamines et en minéraux.",
+        "type_description": "La laitue appartient à la famille des Asteraceae et est une plante annuelle. Elle produit une rosette de feuilles vertes ou rouges, selon la variété. La laitue pousse mieux dans des climats frais et peut être cultivée tout au long de l'année avec les bonnes pratiques de culture.",
+        "culture_description": "La laitue prospère dans un sol bien drainé et fertile, avec un pH neutre à légèrement acide (environ 6,0 à 7,0). Elle nécessite une exposition ensoleillée à mi-ombragée pour une croissance optimale. Les semis peuvent être effectués directement en pleine terre ou en pots, avec un espacement approprié pour permettre le développement des plants.",
+        "distance_description": "Pour favoriser la croissance et éviter la concurrence entre les plants, il est recommandé de les espacer d'environ 20 à 30 centimètres dans les rangs, avec un espacement de 30 à 40 centimètres entre les rangs. Cela permet aux plants de former des têtes de laitue bien développées sans être étouffés par les autres plants.",        "lien_fiche": "fiche-laitue.html",
+        "periode_semis": "Mars à août",
+        "periode_recolte": "Mai à octobre",
+        "besoin_eau": "Élevé",
+        "exposition": "Mi-ombragée",
+        "distance_entre_plants_cm": 20
+      }
+    ]
+  }
+  

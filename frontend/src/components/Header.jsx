@@ -20,9 +20,6 @@ function Header() {
           <li>
             <Link to="/about" className="nav__link">À propos</Link>
           </li>
-          <li>
-            <Link to="/loginPage" className="nav__link">Login</Link>
-          </li>
       </nav>
     </header>
   );

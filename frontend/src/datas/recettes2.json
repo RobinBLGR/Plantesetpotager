@@ -1,0 +1,75 @@
+{
+    "La laitue": [
+      {
+        "id": "4",
+        "nom": "Carotte cake",
+        "image": "https://i.goopics.net/5xtaqv.jpg",
+        "description": "L'occasion de déguster des carottes dans un gâteau, ça change tout !",
+        "parts": "Pour 8 personnes :",
+        "ingredients": [
+          "300 g de carotte",
+          "250 g de farine",
+          "200 g de sucre",
+          "4 oeufs",
+          "100 g de noix",
+          "180 g d'huile",
+          "1 sachet de levure chimique"
+        ],
+        "etapes": [
+          "Epeluchez et rapez les carottes.",
+          "Dans un bol, mélangez la farine, la levure chimique et le sucre, puis y ajouter les carottes rapées.",
+          "Cassez les 4 oeufs et les incorporer au mélange.",
+          "Ajoutez ensuite les noix et l'huile ; mélangez jusqu'à obtenir une pâte homogène.",
+          "Versez dans un plat préalablement beurré et mettre au four 30 à 40 minutes à 180°."
+        ]
+      },
+      {
+        "id": "5",
+        "nom": "Tarte tatin à la carotte",
+        "image": "https://i.goopics.net/5xtaqv.jpg",
+        "description": "L'occasion de déguster des carottes dans un gâteau, ça change tout !",
+        "parts": "Pour 8 personnes :",
+        "ingredients": [
+          "300 g de carotte",
+          "250 g de farine",
+          "200 g de sucre",
+          "4 oeufs",
+          "100 g de noix",
+          "180 g d'huile",
+          "1 sachet de levure chimique"
+        ],
+        "etapes": [
+          "Epeluchez et rapez les carottes.",
+          "Dans un bol, mélangez la farine, la levure chimique et le sucre, puis y ajouter les carottes rapées.",
+          "Cassez les 4 oeufs et les incorporer au mélange.",
+          "Ajoutez ensuite les noix et l'huile ; mélangez jusqu'à obtenir une pâte homogène.",
+          "Versez dans un plat préalablement beurré et mettre au four 30 à 40 minutes à 180°."
+        ]
+      }
+    ],
+    "La courgette": [
+        {
+          "id": "6",
+          "nom": "Aubergine à la parmesane",
+          "image": "https://i.goopics.net/newzxf.jpg",
+          "description": "L'occasion de déguster des carottes dans un gâteau, ça change tout !",
+          "parts": "Pour 8 personnes :",
+          "ingredients": [
+            "300 g de carotte",
+            "250 g de farine",
+            "200 g de sucre",
+            "4 oeufs",
+            "100 g de noix",
+            "180 g d'huile",
+            "1 sachet de levure chimique"
+          ],
+          "etapes": [
+            "Epeluchez et rapez les carottes.",
+            "Dans un bol, mélangez la farine, la levure chimique et le sucre, puis y ajouter les carottes rapées.",
+            "Cassez les 4 oeufs et les incorporer au mélange.",
+            "Ajoutez ensuite les noix et l'huile ; mélangez jusqu'à obtenir une pâte homogène.",
+            "Versez dans un plat préalablement beurré et mettre au four 30 à 40 minutes à 180°."
+          ]
+        }
+      ]
+  }

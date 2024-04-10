@@ -8,7 +8,7 @@ function Recettes() {
   const recettes = recettesData[plante] || [];
 
   if (recettes.length === 0) {
-    return <div>Aucune recette disponible pour {plante}. N'hésitez pas à nous contacter pour nous en proposer une !</div>;
+    return <div className='aucune'>Aucune recette disponible pour {plante}. N'hésitez pas à nous contacter pour nous en proposer une !</div>;
   }
 
   return (

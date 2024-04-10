@@ -1,41 +1,66 @@
-const User = require('../models/User')
+const User = require('../models/User');
+const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
-exports.signup = (req, res, next) => {
-    bcrypt.hash(req.body.password, 10)
-      .then(hash => {
-        const user = new User({
-          email: req.body.email,
-          password: hash
-        });
-        user.save()
-          .then(() => res.status(201).json({ message: 'Utilisateur créé !' }))
-          .catch(error => res.status(400).json({ error }));
-      })
-      .catch(error => res.status(500).json({ error }));
-  };
+const JWT_SECRET = 'votre_clé_secrète'; // Remplacez 'votre_clé_secrète' par une chaîne aléatoire et sécurisée
 
-  exports.login = (req, res, next) => {
-    User.findOne({ email: req.body.email })
-        .then(user => {
-            if (!user) {
-                return res.status(401).json({ error: 'Utilisateur non trouvé !' });
-            }
-            bcrypt.compare(req.body.password, user.password)
-                .then(valid => {
-                    if (!valid) {
-                        return res.status(401).json({ error: 'Mot de passe incorrect !' });
-                    }
-                    res.status(200).json({
-                        userId: user._id,
-                        token: jwt.sign(
-                            { userId: user._id },
-                            'RANDOM_TOKEN_SECRET',
-                            { expiresIn: '24h' }
-                        )
-                    });
-                })
-                .catch(error => res.status(500).json({ error }));
-        })
-        .catch(error => res.status(500).json({ error }));
- };
+exports.signup = async (req, res, next) => {
+  try {
+    const { email, password } = req.body;
+
+    // Vérifier la validité des données d'entrée
+    // Ici, vous pouvez utiliser express-validator ou d'autres méthodes de validation
+
+    // Générer un sel sécurisé pour le hachage des mots de passe
+    const salt = await bcrypt.genSalt(10);
+
+    // Hacher le mot de passe avec le sel
+    const hashedPassword = await bcrypt.hash(password, salt);
+
+    // Créer un nouvel utilisateur
+    const newUser = new User({
+      email,
+      password: hashedPassword
+    });
+
+    // Enregistrer l'utilisateur en base de données
+    await newUser.save();
+
+    res.status(201).json({ message: 'Utilisateur créé avec succès.' });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Une erreur est survenue lors de la création de l\'utilisateur.' });
+  }
+};
+
+exports.login = async (req, res, next) => {
+  try {
+    const { email, password } = req.body;
+
+    // Rechercher l'utilisateur dans la base de données
+    const user = await User.findOne({ email });
+
+    if (!user) {
+      return res.status(401).json({ error: 'Email ou mot de passe incorrect.' });
+    }
+
+    // Vérifier si le mot de passe est correct
+    const passwordMatch = await bcrypt.compare(password, user.password);
+
+    if (!passwordMatch) {
+      return res.status(401).json({ error: 'Email ou mot de passe incorrect.' });
+    }
+
+    // Générer un token JWT
+    const token = jwt.sign(
+      { userId: user._id },
+      JWT_SECRET,
+      { expiresIn: '24h' }
+    );
+
+    res.status(200).json({ token });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Une erreur est survenue lors de la connexion.' });
+  }
+};

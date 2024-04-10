@@ -5,10 +5,10 @@ import '../styles/AfficherRecettes.css';
 
 function AfficherRecettes() {
   return (
-    <div>
-      <h2>Retrouvez ci-dessous toutes nos recettes</h2>
+    <div className='cadre_recettes'>
+      <h2>Retrouvez ci-dessous toutes nos recettes végétariennes :</h2>
       {Object.entries(recettes).map(([legume, recettesLegume]) => (
-        <div key={legume}>
+        <div className='cadre_legume' key={legume}>
           <h3>{legume} : nos recettes</h3>
           <div className="liste__recettes">
             {recettesLegume.map((recette) => (

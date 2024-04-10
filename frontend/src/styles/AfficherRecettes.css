@@ -1,15 +1,34 @@
+@charset "UTF-8";
 .liste__recettes {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 30px;
 }
+@media (max-width: 768px) {
+  .liste__recettes {
+    gap: 10px;
+  }
+}
 
 .recette__item {
-  width: 30%;
-  border: 2px solid tomato;
+  width: 20%;
+  background-color: white;
+  border: 1px orange solid;
+  box-shadow: 2px 2px 4px orange;
   border-radius: 25px;
   padding: 10px;
+}
+@media (max-width: 768px) {
+  .recette__item {
+    width: 30%;
+    padding: 5px;
+  }
+}
+
+.recette__item a {
+  text-decoration: none; /* Supprime le soulignement */
+  color: black; /* Définit la couleur du texte en vert */
 }
 
 .recette__content {
@@ -32,6 +51,7 @@
   width: 100px;
   border-radius: 50px;
   object-fit: cover;
+  box-shadow: 3px 3px 5px black;
 }
 @media (max-width: 768px) {
   .recette__content img {

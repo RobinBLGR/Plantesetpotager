@@ -9,7 +9,6 @@ import NotFound from './components/NotFound';
 import FichePlante from './components/FichePlante';
 import Recettes from './components/Recettes';
 import AfficherRecettes from './components/AfficherRecettes';
-import LoginPage from './components/LoginPage';
 
 function App() {
   return (
@@ -21,7 +20,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/loginPage" element={<LoginPage />} />
         <Route path="/fiche/:nom" element={<FichePlante />} />
         <Route path="/recettes" element={<AfficherRecettes />} />
         <Route path="/recettes/:plante" element={<Recettes />} />
